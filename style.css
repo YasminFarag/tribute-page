@@ -1,0 +1,32 @@
+body {
+    margin: auto;
+    width: 50%;  
+    background: #ccc;   
+}
+
+.main-header {
+    text-align: center;
+    
+}
+
+#img {
+    background: white;
+   /*  height: auto; */
+    display: block
+}
+
+ul li  {
+    padding-bottom: 10px;
+}
+
+.para {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+caption {
+    text-overflow: ellipsis
+}
