@@ -1,0 +1,21 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+  nav ul li {
+    float: left; }
+    nav ul li a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      padding: 14px 16px; }
+      nav ul li a:hover {
+        background-color: #111; }
+
+.paragraph {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 20em; }

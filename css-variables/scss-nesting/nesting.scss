@@ -1,0 +1,43 @@
+nav {
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            background-color: #333;
+
+            li{
+                float: left;
+
+                a {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    padding: 14px 16px;
+
+                    &:hover {
+                        background-color:#111;
+                    }
+
+                    }
+                    
+                }
+            }
+  }
+
+
+
+.paragraph {
+    font: {
+        family: serif;
+        weight: bold;
+        size:20em;
+    }
+}
+
+
+
+
+
+
