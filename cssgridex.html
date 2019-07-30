@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+
+        *{
+            padding: 10px ;
+            box-sizing:border-box;
+        }
+        .container {
+            display:grid;
+            grid-gap:3px;
+            /* grid-template-columns: [first-fraction] 1fr [second] 3fr [third] 4fr [fourth] 4fr [fifth];
+            grid-template-rows: [row1] 40px  [row2] 200px [row3] 30px [row4];
+ */
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 40px 200px 40px;
+            grid-template-areas: 
+            ". h h h h h h h h h h h"
+            "m c c c c c c c c c c c "
+            "m c c c c c c c c c c c "
+            ". f f f f f f f f f f f "
+        }
+        .header {
+            background: #ffeead;
+            /* grid-column: 2 / -1;             
+            grid-column-start: first-fraction;
+            grid-column-end: fifth;*/
+            grid-area: h; /* standing for the header we can add any abbreviations */
+
+        }
+
+        .menu {
+            /* grid-row: 1 / -1 ;             
+            grid-column-start: fourth;
+            grid-column-end: fifth;*/
+            grid-area: m;
+            background: coral;
+        }
+        .content {
+            /* grid-column: 2 / -1; */   
+            /* grid-column-start: first-fraction;
+            grid-column-end: fourth;
+            grid-row: row2 / row3; */
+            grid-area: c;
+            background:#96ceb4;
+
+        }
+        .footer {
+            background: #ffcc5c;
+            /* grid-column-start: first-fraction;
+            grid-column-end: fifth; */
+            grid-area: f;
+        }
+
+        </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">Header</div>
+                <div class="menu">menu</div>
+                <div class="content">content</div>
+                <div class="footer">footer</div>
+
+
+            </div>
+
+        </body>
+        </html>
